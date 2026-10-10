@@ -14,7 +14,7 @@ title = input('title of the page: ')
 page = wikipedia.page(title=title, auto_suggest=False)
 
 # define prompt
-prompt = 'Write a summary of the following article: ' + page.content
+prompt = 'Write a summary of the following article: ' + page.content[:10000]
 
 
 try:
