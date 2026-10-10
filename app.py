@@ -2,7 +2,7 @@ from openai import OpenAI
 
 #pass the api key
 client = OpenAI(
-    api_key = 'my-api-key'
+    api_key = 'my-api-secret-key'
 )
 
 # define prompt
