@@ -13,8 +13,8 @@ messages.append(message)
 # make an api call
 response = client.chat.completions.create(messages=messages, model="gpt-5.4")
 
-# print the response
+# print the response, gives full info like "created", "used model", "number of tokens used", "content number" (if many contents were generated), role "assistant"
 print(response)
 
-# print the response, here the index of choice is "0" and the role is "assistant"
+# print the response, briefly, here only one choice of content and role...the index of choice is "0" - first answer - and the role is "assistant"
 print(response.choices[0].message.content)
