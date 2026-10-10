@@ -4,7 +4,7 @@ import wikipedia
 
 # pass the api key
 client = OpenAI(
-    api_key = 'My_Secret_KEY'
+    api_key = 'Secret_KEY'
 )
 
 # get user input
