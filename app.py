@@ -16,5 +16,5 @@ response = client.chat.completions.create(messages=messages, model="gpt-5.4")
 # print the response
 print(response)
 
-# print the response
+# print the response, here the index of choice is "0" and the role is "assistant"
 print(response.choices[0].message.content)
