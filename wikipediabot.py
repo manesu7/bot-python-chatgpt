@@ -4,17 +4,11 @@ import wikipedia
 
 # pass the api key
 client = OpenAI(
-    api_key = 'Secret_KEY'
+    api_key = 'My_Secret_KEY'
 )
 
-# get user input
-title = input('title of the page: ')
-
-# get the wikipedia content
-page = wikipedia.page(title=title, auto_suggest=False)
-
 # define prompt
-prompt = 'Write a summary of the following article: ' + page.content[:10000]
+prompt =  'Create a 5-bullet point summary of: '
 messages = []
 messages.append({'role': 'user', 'content': prompt})
 
@@ -32,3 +26,5 @@ except openai.AuthenticationError:
 except openai.BadRequestError as e:
     print('invalid request, read the manual!')
     print(e)
+    
+
