@@ -6,7 +6,7 @@ client = OpenAI(
 )
 
 # define prompt
-message = {'role': 'user', 'content': 'why is my website down?'}
+message = {'role': 'user', 'content': 'Is there water on Mars?'}
 messages = []
 messages.append(message)
 
